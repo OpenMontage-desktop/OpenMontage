@@ -118,6 +118,8 @@ python -m lib.reference_style path/to/reference.mp4 \
 ```
 
 FFmpeg and ffprobe are required; Tesseract is optional for text-overlay analysis. The profile guides broad pacing, palette, and motion traits using original footage and graphics; it does not reproduce the reference's specific content.
+
+For car-focused edits, [`skills/creative/automotive-montage-effects.md`](skills/creative/automotive-montage-effects.md) documents a reusable effect workflow for ramps, liquid-glass displacement, restrained flashes, cyan contours, LUT grading, original cut-synced sound, and FFmpeg smoke validation.
 ---
 
 ## What You Get With Zero API Keys
