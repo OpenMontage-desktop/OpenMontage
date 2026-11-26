@@ -107,6 +107,17 @@ What you get back is not "best guess prompt spaghetti." You get:
 - **What it will actually look like** with your currently available tools
 
 Works with **Claude Code, Cursor, Copilot, Windsurf, Codex** — any AI coding assistant that can read files and run code.
+
+For local reference-driven montage work, `lib.reference_style` can turn a reference clip into a reusable JSON edit profile. It samples scene changes, shot-length rhythm, color, lighting, and frame-to-frame motion; optional Tesseract OCR flags persistent text overlays. The source interface accepts the bundled demo assets or later uploaded video/image files without changing the analyzer:
+
+```bash
+python -m lib.reference_style path/to/reference.mp4 \
+  --sources-dir assets \
+  --source path/to/uploaded-footage.mp4 \
+  --output project/reference-style.json
+```
+
+FFmpeg and ffprobe are required; Tesseract is optional for text-overlay analysis. The profile guides broad pacing, palette, and motion traits using original footage and graphics; it does not reproduce the reference's specific content.
 ---
 
 ## What You Get With Zero API Keys
